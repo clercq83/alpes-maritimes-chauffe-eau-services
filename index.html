@@ -115,12 +115,22 @@
   footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;}
   footer strong{color:var(--slate);}
 
+  .float-cta{
+    position:fixed;right:24px;bottom:24px;z-index:60;
+    display:flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;
+    background:var(--navy);color:#fff;font-size:14px;font-weight:600;
+    box-shadow:0 6px 20px rgba(0,0,0,.18);
+  }
+  .float-cta:hover{background:var(--navy-deep);}
+
   @media (max-width:820px){
     nav{display:none;}
     .hero h1{font-size:32px;}
     .grid-3{grid-template-columns:1fr;}
     .brands{flex-direction:column;}
     .contact-wrap{grid-template-columns:1fr;}
+    .float-cta span{display:none;}
+    .float-cta{padding:16px;}
   }
 </style>
 </head>
@@ -146,7 +156,7 @@
   <div class="wrap">
     <div class="eyebrow">Zone en cours de lancement</div>
     <h1>Une panne d'eau chaude ne devrait jamais durer.</h1>
-    <p>Dépannage, remplacement et pose de chauffe-eau électriques Thermor et Atlantic, de Nice à Vence, dès qu'un artisan aura rejoint le réseau ici.</p>
+    <p>On sait qu'une panne n'attend pas : dépannage, remplacement et pose de chauffe-eau électriques Thermor et Atlantic, de Nice à Vence, dès qu'un artisan aura rejoint le réseau ici.</p>
     <div class="actions">
       <a href="#contact" class="btn btn-primary">Être prévenu du lancement</a>
       <a href="#services" class="btn btn-ghost">Voir les prestations</a>
@@ -185,6 +195,9 @@
         <h3>Il intervient chez vous</h3>
         <p>C'est l'artisan lui-même qui vient poser ou dépanner, pas un sous-traitant anonyme envoyé par une plateforme.</p>
       </div>
+    </div>
+    <div style="text-align:center;margin-top:36px;">
+      <a href="#contact" class="btn btn-primary">Être prévenu dès qu'un artisan est disponible</a>
     </div>
   </div>
 </section>
@@ -374,6 +387,11 @@
       </select>
       <label for="msg">Message</label>
       <textarea id="msg" placeholder="Votre besoin, ou votre profil si vous êtes artisan."></textarea>
+      <p style="margin:-10px 0 18px;font-size:12.5px;color:var(--slate-soft);">
+        📷 Si vous êtes client : une ou deux photos de votre chauffe-eau (l'appareil entier, et son
+        emplacement) aideront l'artisan à évaluer l'accès et le volume dès son arrivée sur la zone.
+        Pensez à les joindre au mail qui va s'ouvrir.
+      </p>
       <button type="button" class="btn-primary" id="envoyer-demande">Envoyer ma demande</button>
       <p id="envoi-note" style="margin-top:12px;font-size:12.5px;color:var(--slate-soft);" hidden>Votre e-mail va s'ouvrir avec le message pré-rempli, il ne reste qu'à l'envoyer.</p>
     </form>
@@ -386,6 +404,11 @@
     <span>Nice · Saint-Laurent-du-Var · Cagnes-sur-Mer · Vence · Carros</span>
   </div>
 </footer>
+
+<a href="#contact" class="float-cta" id="cta-flottant">
+  <i class="ti">✦</i>
+  <span>Être prévenu du lancement</span>
+</a>
 
 <script>
   // Le bouton "Devenez partenaire" preselectionne le profil artisan dans le
