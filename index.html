@@ -21,9 +21,6 @@
     --copper-light:#E8D9A0;
     --glow:rgba(184,144,42,0.32);
     --glow-soft:rgba(184,144,42,0.14);
-    --gold:#D4AF37;
-    --gold-soft:rgba(212,175,55,.16);
-    --gold-text:#8A6D1E;
     --cream:#FAF9F7;
     --slate:#181A1F;
     --slate-soft:#5B6270;
@@ -52,7 +49,6 @@
   .btn-ghost:hover{border-color:var(--navy);color:var(--navy);}
 
   .hero{background:var(--cream);padding:90px 0 70px;}
-  .hero-visual{display:none;}
   .eyebrow{
     display:inline-block;
     font-size:13px;letter-spacing:.06em;color:var(--navy);font-weight:700;margin-bottom:18px;
@@ -94,7 +90,7 @@
 
   .brands{display:flex;gap:24px;}
   .brand-card{flex:1;background:#fff;border:1px solid var(--line);border-radius:16px;padding:36px 32px;display:flex;flex-direction:column;gap:10px;}
-  .brand-card .tag{align-self:flex-start;font-size:11px;font-weight:600;letter-spacing:.05em;color:var(--gold-text);}
+  .brand-card .tag{align-self:flex-start;font-size:11px;font-weight:600;letter-spacing:.05em;color:var(--copper);}
   .brand-card h3{font-size:24px;}
   .brand-card p{color:var(--slate-soft);font-size:14.5px;}
 
@@ -141,33 +137,20 @@
       <a href="#zone">Zone</a>
       <a href="#contact">Contact</a>
     </nav>
+    <a href="#contact" class="btn btn-ghost" id="lien-partenaire">Devenez partenaire</a>
     <a href="#contact" class="btn btn-primary">Être prévenu</a>
   </div>
 </header>
 
 <section class="hero">
   <div class="wrap">
-    <div class="eyebrow">✦ Zone en cours de lancement</div>
+    <div class="eyebrow">Zone en cours de lancement</div>
     <h1>Une panne d'eau chaude ne devrait jamais durer.</h1>
     <p>Dépannage, remplacement et pose de chauffe-eau électriques Thermor et Atlantic, de Nice à Vence, dès qu'un artisan aura rejoint le réseau ici.</p>
     <div class="actions">
       <a href="#contact" class="btn btn-primary">Être prévenu du lancement</a>
       <a href="#services" class="btn btn-ghost">Voir les prestations</a>
     </div>
-  </div>
-  <div class="hero-visual" aria-hidden="true">
-    <svg viewBox="0 0 300 420" xmlns="http://www.w3.org/2000/svg">
-      <path d="M150 50 C150 50, 78 168, 78 238 a72 72 0 0 0 144 0 C222 168, 150 50, 150 50 Z" fill="none" stroke="var(--gold)" stroke-width="2.5" opacity=".55"/>
-      <g fill="var(--gold)">
-        <path d="M58 66 l4 11 11 4 -11 4 -4 11 -4 -11 -11 -4 11 -4 z" opacity=".95"/>
-        <path d="M234 108 l3 9 9 3 -9 3 -3 9 -3 -9 -9 -3 9 -3 z" opacity=".8"/>
-        <path d="M40 268 l3 9 9 3 -9 3 -3 9 -3 -9 -9 -3 9 -3 z" opacity=".8"/>
-        <path d="M246 312 l4 11 11 4 -11 4 -4 11 -4 -11 -11 -4 11 -4 z" opacity=".9"/>
-        <circle cx="204" cy="58" r="3.2" opacity=".85"/>
-        <circle cx="86" cy="344" r="3.2" opacity=".85"/>
-        <circle cx="30" cy="150" r="2.4" opacity=".7"/>
-      </g>
-    </svg>
   </div>
 </section>
 
@@ -233,14 +216,14 @@
   </div>
 </section>
 
-<section class="resist" id="resistances">
+<section id="resistances">
   <div class="wrap">
     <div class="section-head">
       <div class="eyebrow">Bien choisir</div>
       <h2>Quel chauffe-eau pour vous ?</h2>
       <p>Trois technologies de résistance existent. Le bon choix dépend surtout de la dureté de votre eau.</p>
     </div>
-    <div class="grid-3 dark">
+    <div class="grid-3">
       <div class="card">
         <div class="illus">
           <svg viewBox="0 0 160 100" xmlns="http://www.w3.org/2000/svg">
@@ -278,11 +261,11 @@
             <path d="M64 28 q5 -6 10 0 t10 0 t10 0 t10 0" stroke="var(--navy)" stroke-width="1.4" fill="none" opacity=".45"/>
             <path d="M64 48 q5 -6 10 0 t10 0 t10 0 t10 0" stroke="var(--navy)" stroke-width="1.4" fill="none" opacity=".45"/>
             <path d="M64 68 q5 -6 10 0 t10 0 t10 0 t10 0" stroke="var(--navy)" stroke-width="1.4" fill="none" opacity=".45"/>
-            <ellipse cx="80" cy="50" rx="24" ry="46" fill="none" stroke="var(--gold)" stroke-width="1.6" stroke-dasharray="4 3"/>
+            <ellipse cx="80" cy="50" rx="24" ry="46" fill="none" stroke="var(--copper)" stroke-width="1.6" stroke-dasharray="4 3"/>
             <rect x="70" y="14" width="20" height="72" rx="10" fill="none" stroke="var(--teal)" stroke-width="2"/>
             <path d="M80 18 L86 34 L74 50 L86 66 L80 82" fill="none" stroke="var(--navy)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <text x="108" y="32" font-family="Public Sans" font-size="15" font-weight="700" fill="var(--gold)">+</text>
-            <text x="108" y="74" font-family="Public Sans" font-size="15" font-weight="700" fill="var(--gold)">+</text>
+            <text x="108" y="32" font-family="Public Sans" font-size="15" font-weight="700" fill="var(--copper)">+</text>
+            <text x="108" y="74" font-family="Public Sans" font-size="15" font-weight="700" fill="var(--copper)">+</text>
           </svg>
         </div>
         <div class="num">ACI</div>
@@ -385,13 +368,14 @@
       <input id="ville" type="text" placeholder="Votre commune">
       <label for="profil">Vous êtes</label>
       <select id="profil">
-        <option>Un client, en attente d'un artisan sur ma zone</option>
-        <option>Un artisan intéressé pour reprendre cette zone</option>
-        <option>Autre demande</option>
+        <option value="client">Un client, en attente d'un artisan sur ma zone</option>
+        <option value="artisan">Un artisan intéressé pour reprendre cette zone</option>
+        <option value="autre">Autre demande</option>
       </select>
       <label for="msg">Message</label>
       <textarea id="msg" placeholder="Votre besoin, ou votre profil si vous êtes artisan."></textarea>
-      <button type="button" class="btn-primary">Envoyer ma demande</button>
+      <button type="button" class="btn-primary" id="envoyer-demande">Envoyer ma demande</button>
+      <p id="envoi-note" style="margin-top:12px;font-size:12.5px;color:var(--slate-soft);" hidden>Votre e-mail va s'ouvrir avec le message pré-rempli, il ne reste qu'à l'envoyer.</p>
     </form>
   </div>
 </section>
@@ -402,6 +386,32 @@
     <span>Nice · Saint-Laurent-du-Var · Cagnes-sur-Mer · Vence · Carros</span>
   </div>
 </footer>
+
+<script>
+  // Le bouton "Devenez partenaire" preselectionne le profil artisan dans le
+  // formulaire, pour qu'un artisan interesse n'ait pas a deviner quoi choisir.
+  document.getElementById("lien-partenaire").addEventListener("click", () => {
+    document.getElementById("profil").value = "artisan";
+  });
+
+  // Pas de backend pour l'instant : le formulaire ouvre un e-mail pre-rempli
+  // vers l'adresse deja surveillee (contact@azur-chauffe-eau.fr), plutot que
+  // de pretendre "envoyer" une demande qui n'irait nulle part.
+  document.getElementById("envoyer-demande").addEventListener("click", () => {
+    const nom = document.getElementById("nom").value || "(non renseigné)";
+    const tel = document.getElementById("tel").value || "(non renseigné)";
+    const ville = document.getElementById("ville").value || "(non renseignée)";
+    const profil = document.getElementById("profil").value;
+    const msg = document.getElementById("msg").value || "(aucun message)";
+    const sujet = encodeURIComponent("Zone Riviera, PACA Chauffe-Eau Services");
+    const corps = encodeURIComponent(
+      "Zone : Riviera\nProfil : " + profil + "\nNom : " + nom +
+      "\nTéléphone : " + tel + "\nCommune : " + ville + "\n\nMessage :\n" + msg
+    );
+    window.location.href = "mailto:contact@azur-chauffe-eau.fr?subject=" + sujet + "&body=" + corps;
+    document.getElementById("envoi-note").hidden = false;
+  });
+</script>
 
 </body>
 </html>
